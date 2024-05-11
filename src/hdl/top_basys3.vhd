@@ -178,14 +178,14 @@ TDM_inst : TDM4
        o_data => TDM_num,
        o_sel => an (3 downto 0)
     );	
-ALU_inst : ALU
-    port map(
-        i_A => w_A,
-        i_B => w_B,
-        i_op => sw (2 downto 0),
-        o_result => w_result,
-        o_flags => led (15 downto 13)
-    );
+--ALU_inst : ALU
+--    port map(
+--        i_A => w_A,
+--        i_B => w_B,
+--        i_op => sw (2 downto 0),
+--        o_result => w_result,
+--        o_flags => led (15 downto 13)
+--    );
     
 twoscomp_decimal_inst : twoscomp_decimal
         port map (
